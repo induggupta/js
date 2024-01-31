@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: bold;
+
+        }
+
+        img {
+            height: 300px;
+            width: 300px;
+            border: 20px solid black;
+
+        }
+
+        .dark {
+            background-color: black;
+            color: azure;
+            border: 20px solid white;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="div">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate fugiat earum unde eaque quo placeat,
+            optio repudiandae eveniet!
+            At veritatis eum assumenda dolor nisi, est porro adipisci modi quis!</p>
+    </div>
+    <button onclick="dark()"><img
+            src=" https://media.gettyimages.com/id/1163481156/vector/sun-and-sunbeams.jpg?s=612x612&w=gi&k=20&c=HDLHQxZldqP4O_nWJ-DbX99zAr9X1GDwIXj3eqWrPC4="alt=" " id="btn"></button>
+    <script>
+        const mainDiv = document.getElementById("div")
+        const button = document.getElementById("btn")
+        function dark() {
+            document.body.classList.toggle(dark)
+            console.log(button.getAttribute("src"))
+            if (button.getAttribute("src")=="https://media.gettyimages.com/id/1163481156/vector/sun-and-sunbeams.jpg?s=612x612&w=gi&k=20&c=HDLHQxZldqP4O_nWJ-DbX99zAr9X1GDwIXj3eqWrPC4=") {
+                button.setAttribute("src","https://w0.peakpx.com/wallpaper/411/814/HD-wallpaper-lampada-icio.jpg")
+            }
+            else {
+                button.setAttribute("src","https://media.gettyimages.com/id/1163481156/vector/sun-and-sunbeams.jpg?s=2048x2048&w=gi&k=20&c=fdH7hMn9sNxWtRhzvLomRQz0kO-f0NXn7OjARJBGLz4=")
+            }
+        }
+    </script>
+</body>
+
+</html>

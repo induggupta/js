@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 1px solid black;
+   border-width: 20px;
+   background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/04/Free-simple-wallpaper-HD.png);
+} 
+#btn:hover
+{
+    background-color: skyblue;
+    color: black;
+    align-items: center;
+    font-size: 10px;
+
+}
